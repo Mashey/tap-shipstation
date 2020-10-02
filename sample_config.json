@@ -1,0 +1,5 @@
+{
+  "api_key": "Your ShipStation API Key",
+  "api_secret": "Your ShipStation API Secret",
+  "default_start_datetime": "2018-11-20 00:00:00"
+}
