@@ -1,5 +1,6 @@
 import os
 import json
+import jsonref
 from datetime import datetime
 from datetime import timedelta
 import pendulum
@@ -20,7 +21,7 @@ def load_schemas():
         path = get_abs_path('schemas') + '/' + filename
         file_raw = filename.replace('.json', '')
         with open(path) as file:
-            schemas[file_raw] = json.load(file)
+            schemas[file_raw] = jsonref.load(file)
 
     return schemas
 
